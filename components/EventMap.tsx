@@ -35,11 +35,12 @@ export default function EventMap({ events, selectedId, onSelect }: Props) {
         scrollWheelZoom: false,
       });
       mapRef.current = map;
-      // OpenStreetMap standard tiles: no key, honest attribution in the corner.
+      // Esri World Street Map: keyless, no API key. Replaces tile.openstreetmap.org
+      // (403s from shared egress IPs and policy-fragile) with honest attribution.
       leaflet
-        .tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        .tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", {
           attribution:
-            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            'Basemap: <a href="https://www.esri.com">Esri</a> &middot; &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
           maxZoom: 12,
           minZoom: 2,
         })
