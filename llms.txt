@@ -1,0 +1,45 @@
+# hazardlens
+
+News-derived hazard event data. hazardlens turns global news into a structured, queryable open dataset of landslide events, extracted from GDELT 2.0 GKG: where, when, how bad, and the article it came from.
+
+## What it is
+
+- **Extraction pipeline** (`scripts/build-dataset.mjs`): queries the GDELT 2.0 DOC API in artlist mode per landslide term (8 queries across 6 languages), keeps articles whose URL slug contains a landslide keyword, drops election metaphors and opinion pieces, extracts a place name from the slug, geocodes it with Nominatim (OpenStreetMap) using the story's country as hint, and dedupes to events with merged sources. No article bodies are fetched.
+- **Sample dataset** (`data/events-sample.json`): real extracted landslide events with full provenance per event (article URL, publisher, GDELT date, lat/lon, extraction method, match tier, confidence note).
+- **REST API**: `GET /api/v1/events` with filters; OpenAPI 3.1 at `/api/openapi.json`.
+- **UI**: world map of events, filterable feed, per-event detail with source links, method section documenting the extractor and its limits.
+
+## API quick start
+
+```
+curl "https://hazards.nshipyard.com/api/v1/events?hazard=landslide&country=Nepal&since=2026-01-01&limit=5"
+curl "https://hazards.nshipyard.com/api/openapi.json"
+```
+
+Filters: `hazard`, `country` (name substring or code), `since`/`until` (YYYY-MM-DD), `confidence` (high/medium/low), `limit` (1-100), `offset`. Every response carries `sample: true`; every event carries `extraction_method`, `match_tier`, `confidence`, and `confidence_note`.
+
+## Honest labeling (read before using the data)
+
+- The dataset is a **sample of reported events, not a census**. Coverage follows news coverage; under-reported regions are under-represented.
+- No article body is fetched. Matching is keyword-level on URL slugs; Nominatim geocoding of slug-derived place names can be wrong; casualty counts are unverified leads from headline slugs.
+- Confidence tiers: `high` (city-level geo in the story's country), `medium` (city-level geo with a weaker match, or coarser geo), `low` (country-level geo only). See the method section on the site and the script header for the full extractor spec.
+
+## For agents
+
+See `SKILL.md` for the agent-facing API contract.
+
+## Reproduce the dataset
+
+```
+node scripts/build-dataset.mjs --max-events 150
+```
+
+The GDELT doc API rate-limits shared IPs (HTTP 429), so the script paces queries at least 10 seconds apart with 60-second backoff retries, and caches artlist responses in /tmp. Nominatim geocoding honors the 1 request/second usage policy.
+
+## Stack
+
+Next.js 16, React 19, TypeScript, Tailwind CSS 4, Leaflet. No database: the sample ships as JSON.
+
+## Author
+
+Richardson Dackam: https://x.com/richardsondx, https://github.com/richardsondx

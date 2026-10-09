@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-10-09T03:43:24.506Z",
+  "queries": [
+    "landslide",
+    "mudslide",
+    "rockslide",
+    "deslizamiento",
+    "deslizamento",
+    "glissement de terrain",
+    "erdrutsch",
+    "frana"
+  ],
+  "unique_articles": 37,
+  "geocoded": 33,
+  "events_kept": 26,
+  "elapsed_s": 134
+}

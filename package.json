@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "description": "News-to-dataset pipeline for under-observed hazard events, starting with landslides. GDELT 2.0 DOC API in, structured open data out.",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@tailwindcss/turbopack": "^4",
+    "@types/leaflet": "^1.9.12",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.0",
+    "playwright": "^1.49.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5"
+  },
+  "name": "hazardlens",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "build:dataset": "node scripts/build-dataset.mjs --max-events 150",
+    "dev": "next dev",
+    "lint": "eslint",
+    "start": "next start"
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --color-ink: #0a0a0a;
+  --color-accent: #2563eb;
+  --color-accent-dark: #1d4ed8;
+  --color-line: #ececec;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #0a0a0a;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #dbeafe;
+}
+
+/* Leaflet: inherit the site font, keep the map light and quiet. */
+.leaflet-container {
+  font-family: var(--font-sans);
+  background: #f8fafc;
+  outline: none;
+  border-radius: 10px;
+}
+
+.leaflet-control-zoom a {
+  color: #0a0a0a !important;
+  border: none !important;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+}

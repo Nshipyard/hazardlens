@@ -1,0 +1,728 @@
+{
+  "dataset": "hazardlens landslide sample",
+  "sample": true,
+  "generated_at": "2026-10-09T03:43:24.506Z",
+  "source": "GDELT 2.0 DOC API, artlist mode (global news, default 3-month window); geocoding via Nominatim (OpenStreetMap)",
+  "extractor": "scripts/build-dataset.mjs (doc-api-slug-geocode-v1): artlist queries per landslide term, URL-slug keyword match, election/governance/risk-analysis exclusions, place-name extraction from slug, Nominatim geocoding with story-country hint (detected from slug/title, publisher country ignored for international news), date+country+grid dedupe. No article bodies fetched. See script header for limits.",
+  "event_count": 26,
+  "date_range": {
+    "from": "2026-07-24",
+    "to": "2026-10-02"
+  },
+  "countries": [
+    "Brazil",
+    "China",
+    "India",
+    "Italy",
+    "Japan",
+    "Nepal",
+    "Thailand",
+    "United States"
+  ],
+  "events": [
+    {
+      "id": "hl-a07f8761a955",
+      "hazard_type": "landslide",
+      "title": "Floods landslides kill 56 in india and 14 in nepal",
+      "country": "Nepal",
+      "country_code": "NP",
+      "admin1": null,
+      "place_name": "Nepal",
+      "geo_level": "country",
+      "lat": 28.378,
+      "lon": 84,
+      "date": "2026-09-28",
+      "severity_note": "56 reported killed (from headline slug; unverified)",
+      "reported_killed": 56,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://newsindiatimes.com/floods-landslides-kill-56-in-india-and-14-in-nepal/",
+          "publisher": "newsindiatimes.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "low",
+      "confidence_note": "Landslide keyword in the article URL slug, but only country-level geocoding was possible. Treat location as approximate; article body not read."
+    },
+    {
+      "id": "hl-8f1199e4df1b",
+      "hazard_type": "landslide",
+      "title": "Lahaul spiti landslide kills 13 as tata sumo is crushed by falling rocks on udaipur killar road",
+      "country": "India",
+      "country_code": "IN",
+      "admin1": "Himachal Pradesh",
+      "place_name": "Spiti, Lahaul and Spiti, Himachal Pradesh",
+      "geo_level": "city",
+      "lat": 32.368,
+      "lon": 78.086,
+      "date": "2026-07-24",
+      "severity_note": "13 reported killed (from headline slug; unverified)",
+      "reported_killed": 13,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.newsx.com/regionals/lahaul-spiti-landslide-kills-13-as-tata-sumo-is-crushed-by-falling-rocks-on-udaipur-killar-road-252153/",
+          "publisher": "newsx.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "high",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-f4f5b59f314f",
+      "hazard_type": "landslide",
+      "title": "Flash flood landslides kill 9 across keralam",
+      "country": "India",
+      "country_code": "IN",
+      "admin1": null,
+      "place_name": "India",
+      "geo_level": "country",
+      "lat": 22.351,
+      "lon": 78.668,
+      "date": "2026-09-22",
+      "severity_note": "9 reported killed (from headline slug; unverified)",
+      "reported_killed": 9,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.hindustantimes.com/india-news/flash-flood-landslides-kill-9-across-keralam-101790018930900.html",
+          "publisher": "hindustantimes.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "low",
+      "confidence_note": "Landslide keyword in the article URL slug, but only country-level geocoding was possible. Treat location as approximate; article body not read."
+    },
+    {
+      "id": "hl-a2c428be8517",
+      "hazard_type": "landslide",
+      "title": "Floods and landslides have affected various highways in the country what is the status of which with list",
+      "country": "Nepal",
+      "country_code": "NP",
+      "admin1": null,
+      "place_name": "Nepal",
+      "geo_level": "country",
+      "lat": 28.378,
+      "lon": 84,
+      "date": "2026-10-02",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.ratopati.com/story/596524/floods-and-landslides-have-affected-various-highways-in-the-country-what-is-the-status-of-which-with-list",
+          "publisher": "ratopati.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "low",
+      "confidence_note": "Landslide keyword in the article URL slug, but only country-level geocoding was possible. Treat location as approximate; article body not read."
+    },
+    {
+      "id": "hl-9fc55e939351",
+      "hazard_type": "landslide",
+      "title": "Massive landslide caught on camera in uttarakhand",
+      "country": "India",
+      "country_code": "IN",
+      "admin1": "Uttarakhand",
+      "place_name": "Uttarakhand, India",
+      "geo_level": "city",
+      "lat": 30.042,
+      "lon": 79.09,
+      "date": "2026-10-01",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.deccanchronicle.com/nation/massive-landslide-caught-on-camera-in-uttarakhand-1992344",
+          "publisher": "deccanchronicle.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "high",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-7bb6b703c838",
+      "hazard_type": "landslide",
+      "title": "Rompimento de tubulacao da sabesp causa deslizamento em varzea paulista",
+      "country": "Brazil",
+      "country_code": "BR",
+      "admin1": "São Paulo",
+      "place_name": "Alameda Jundiaí, Jardim Isaura, Sorocaba",
+      "geo_level": "city",
+      "lat": -23.482,
+      "lon": -47.435,
+      "date": "2026-10-01",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://g1.globo.com/sp/sorocaba-jundiai/noticia/2026/10/01/rompimento-de-tubulacao-da-sabesp-causa-deslizamento-em-varzea-paulista.ghtml",
+          "publisher": "g1.globo.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "high",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-93939444fa47",
+      "hazard_type": "landslide",
+      "title": "Heavy rain and landslides havoc in nepal 35 dead so far avalanches in mountains worsen destruction",
+      "country": "Nepal",
+      "country_code": "NP",
+      "admin1": null,
+      "place_name": "Nepal",
+      "geo_level": "country",
+      "lat": 28.378,
+      "lon": 84,
+      "date": "2026-10-01",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.punjabkesari.com/world-news/heavy-rain-and-landslides-havoc-in-nepal-35-dead-so-far-avalanches-in-mountains-worsen-destruction/",
+          "publisher": "punjabkesari.com"
+        },
+        {
+          "url": "https://bnn-news.com/world/landslides-continue-in-nepal-trekkers-leave-routes-unfinished-t8prfve",
+          "publisher": "bnn-news.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "low",
+      "confidence_note": "Landslide keyword in the article URL slug, but only country-level geocoding was possible. Treat location as approximate; article body not read."
+    },
+    {
+      "id": "hl-270daa371b12",
+      "hazard_type": "landslide",
+      "title": "Dozens rescued flooding omaha mudslides close roads",
+      "country": "United States",
+      "country_code": "US",
+      "admin1": "Nebraska",
+      "place_name": "Omaha, Douglas County, Nebraska",
+      "geo_level": "city",
+      "lat": 41.259,
+      "lon": -95.938,
+      "date": "2026-10-01",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.1011now.com/2026/10/01/dozens-rescued-flooding-omaha-mudslides-close-roads/",
+          "publisher": "1011now.com"
+        },
+        {
+          "url": "https://www.wowt.com/2026/10/01/flooding-mudslides-close-major-roads-omaha-metro-morning-commute/",
+          "publisher": "wowt.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "high",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-ce6342dca860",
+      "hazard_type": "landslide",
+      "title": "Mudslide closes roads in northern New Mexico",
+      "country": "United States",
+      "country_code": "US",
+      "admin1": "New Mexico",
+      "place_name": "New Mexico, United States",
+      "geo_level": "city",
+      "lat": 34.58,
+      "lon": -105.996,
+      "date": "2026-10-01",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.koat.com/article/mudslide-closes-roads-in-northern-new-mexico/73965047",
+          "publisher": "koat.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "medium",
+      "confidence_note": "Landslide keyword in the article URL slug; geocoded place is outside the detected story country, so the location is less certain. Article body not read."
+    },
+    {
+      "id": "hl-ce70207e6c83",
+      "hazard_type": "landslide",
+      "title": "Laguna beach swells hurricane polo cause rockslide",
+      "country": "United States",
+      "country_code": "US",
+      "admin1": "California",
+      "place_name": "Laguna Beach, Orange County, California",
+      "geo_level": "city",
+      "lat": 33.543,
+      "lon": -117.785,
+      "date": "2026-10-01",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.foxla.com/news/laguna-beach-swells-hurricane-polo-cause-rockslide",
+          "publisher": "foxla.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "high",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-8ac779a5b117",
+      "hazard_type": "landslide",
+      "title": "Agate street stairs in laguna beach closed off after rockslide",
+      "country": "United States",
+      "country_code": "US",
+      "admin1": "California",
+      "place_name": "Laguna Beach, Orange County, California",
+      "geo_level": "city",
+      "lat": 33.543,
+      "lon": -117.785,
+      "date": "2026-09-30",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.ocregister.com/2026/09/30/agate-street-stairs-in-laguna-beach-closed-off-after-rockslide/",
+          "publisher": "ocregister.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "high",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-c682e3d2e050",
+      "hazard_type": "landslide",
+      "title": "Northern thailand landslide",
+      "country": "Thailand",
+      "country_code": "TH",
+      "admin1": null,
+      "place_name": "Thailand",
+      "geo_level": "country",
+      "lat": 14.897,
+      "lon": 100.833,
+      "date": "2026-09-28",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.chiangraitimes.com/north-thailand/northern-thailand-landslide/",
+          "publisher": "chiangraitimes.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "low",
+      "confidence_note": "Landslide keyword in the article URL slug, but only country-level geocoding was possible. Treat location as approximate; article body not read."
+    },
+    {
+      "id": "hl-fe33e304af9a",
+      "hazard_type": "landslide",
+      "title": "Floods landslides kill more than 50 in india and 14 in nepal",
+      "country": "Nepal",
+      "country_code": "NP",
+      "admin1": null,
+      "place_name": "Nepal",
+      "geo_level": "country",
+      "lat": 28.378,
+      "lon": 84,
+      "date": "2026-09-27",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.geo.tv/latest/683928-floods-landslides-kill-more-than-50-in-india-and-14-in-nepal",
+          "publisher": "geo.tv"
+        },
+        {
+          "url": "https://www.dailyexcelsior.com/relentless-rainfall-triggers-floods-landslides-across-nepal/",
+          "publisher": "dailyexcelsior.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "low",
+      "confidence_note": "Landslide keyword in the article URL slug, but only country-level geocoding was possible. Treat location as approximate; article body not read."
+    },
+    {
+      "id": "hl-5b847bf55304",
+      "hazard_type": "landslide",
+      "title": "Heavy rain causes flooding and mudslide in oak glen triggering road closures",
+      "country": "United States",
+      "country_code": "US",
+      "admin1": "California",
+      "place_name": "Oak Glen, San Bernardino County, California",
+      "geo_level": "city",
+      "lat": 34.049,
+      "lon": -116.948,
+      "date": "2026-09-25",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.redlandsdailyfacts.com/2026/09/24/heavy-rain-causes-flooding-and-mudslide-in-oak-glen-triggering-road-closures/",
+          "publisher": "redlandsdailyfacts.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "high",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-7332f2d95a50",
+      "hazard_type": "landslide",
+      "title": "Frana sulle colline di via Guado Strada riaperta ma non sempre",
+      "country": "Italy",
+      "country_code": "IT",
+      "admin1": "Piedmont",
+      "place_name": "Il diavolo sulle colline, 15, Piazza Vittorio Veneto",
+      "geo_level": "city",
+      "lat": 44.671,
+      "lon": 8.648,
+      "date": "2026-09-23",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.zazoom.it/2026-09-23/frana-sulle-colline-di-via-guado-strada-riaperta-ma-non-sempre/19712577/",
+          "publisher": "zazoom.it"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "medium",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-24a6b2f69c9f",
+      "hazard_type": "landslide",
+      "title": "Taifun in japan mindestens vier tote nach erdrutschen",
+      "country": "Japan",
+      "country_code": "JP",
+      "admin1": null,
+      "place_name": "Japan",
+      "geo_level": "country",
+      "lat": 36.575,
+      "lon": 139.239,
+      "date": "2026-09-22",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.moz.de/nachrichten/panorama/taifun-in-japan-mindestens-vier-tote-nach-erdrutschen-79491110.html",
+          "publisher": "moz.de"
+        },
+        {
+          "url": "https://www.stuttgarter-zeitung.de/panorama/taifun-in-japan-mindestens-vier-tote-nach-erdrutschen-79491110.html",
+          "publisher": "stuttgarter-zeitung.de"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "low",
+      "confidence_note": "Landslide keyword in the article URL slug, but only country-level geocoding was possible. Treat location as approximate; article body not read."
+    },
+    {
+      "id": "hl-2a59da877d89",
+      "hazard_type": "landslide",
+      "title": "Article71490291",
+      "country": "India",
+      "country_code": "IN",
+      "admin1": "Kerala",
+      "place_name": "Idukki, Kerala, India",
+      "geo_level": "city",
+      "lat": 9.815,
+      "lon": 76.999,
+      "date": "2026-09-21",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.thehindubusinessline.com/news/nh-soil-excavation-to-be-examined-amid-landslide-concerns-in-idukki-minister-anoop-jacob/article71490291.ece",
+          "publisher": "thehindubusinessline.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "high",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-5480e048846d",
+      "hazard_type": "landslide",
+      "title": "Article71488541",
+      "country": "India",
+      "country_code": "IN",
+      "admin1": "Kerala",
+      "place_name": "Kerala, India",
+      "geo_level": "city",
+      "lat": 10.353,
+      "lon": 76.512,
+      "date": "2026-09-20",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.thehindu.com/news/national/kerala/two-killed-one-injured-in-mudslide-in-keralams-kottakkamboor/article71488541.ece",
+          "publisher": "thehindu.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "high",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-a989d339560c",
+      "hazard_type": "landslide",
+      "title": "Article71450456",
+      "country": "China",
+      "country_code": "CN",
+      "admin1": null,
+      "place_name": "China",
+      "geo_level": "country",
+      "lat": 34.541,
+      "lon": 108.924,
+      "date": "2026-09-10",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.thehindu.com/news/international/death-toll-rises-in-landslides-in-southeastern-china/article71450456.ece",
+          "publisher": "thehindu.com"
+        },
+        {
+          "url": "https://abcnews.com/International/wireStory/death-toll-rises-16-landslides-southeastern-china-136327051",
+          "publisher": "abcnews.com"
+        },
+        {
+          "url": "https://www.winnipegfreepress.com/world/2026/09/10/death-toll-rises-to-16-in-landslides-in-southeastern-china",
+          "publisher": "winnipegfreepress.com"
+        },
+        {
+          "url": "https://www.alwihdainfo.com/china-intensifies-rescue-operations-following-devastating-mudslide-at-xizang-border-port/",
+          "publisher": "alwihdainfo.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "low",
+      "confidence_note": "Landslide keyword in the article URL slug, but only country-level geocoding was possible. Treat location as approximate; article body not read."
+    },
+    {
+      "id": "hl-67d9cd99ef9e",
+      "hazard_type": "landslide",
+      "title": "Temporali e trombe daria nel Nord Italia | bloccata la linea Brennero - Bolzano per una frana Scoperchiata piscina a Tre",
+      "country": "Italy",
+      "country_code": "IT",
+      "admin1": null,
+      "place_name": "Italy",
+      "geo_level": "country",
+      "lat": 42.638,
+      "lon": 12.674,
+      "date": "2026-09-09",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.zazoom.it/2026-09-09/temporali-e-trombe-daria-nel-nord-italia-bloccata-la-linea-brennero-bolzano-per-una-frana-scoperchiata-piscina-a-treviso/19659969/",
+          "publisher": "zazoom.it"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "low",
+      "confidence_note": "Landslide keyword in the article URL slug, but only country-level geocoding was possible. Treat location as approximate; article body not read."
+    },
+    {
+      "id": "hl-8d4fff934472",
+      "hazard_type": "landslide",
+      "title": "Confirmed dead as mudslide hits village in east chinas jiangxi",
+      "country": "China",
+      "country_code": "CN",
+      "admin1": null,
+      "place_name": "China",
+      "geo_level": "country",
+      "lat": 34.541,
+      "lon": 108.924,
+      "date": "2026-09-09",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://theshillongtimes.com/2026/09/09/12-confirmed-dead-as-mudslide-hits-village-in-east-chinas-jiangxi/",
+          "publisher": "theshillongtimes.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "low",
+      "confidence_note": "Landslide keyword in the article URL slug, but only country-level geocoding was possible. Treat location as approximate; article body not read."
+    },
+    {
+      "id": "hl-1353d7614a5b",
+      "hazard_type": "landslide",
+      "title": "Chinese national rescued in nepal mudslide as search continues",
+      "country": "Nepal",
+      "country_code": "NP",
+      "admin1": null,
+      "place_name": "Nepal",
+      "geo_level": "country",
+      "lat": 28.378,
+      "lon": 84,
+      "date": "2026-09-09",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "http://www.nepalnational.com/news/279290731/chinese-national-rescued-in-nepal-mudslide-as-search-continues",
+          "publisher": "nepalnational.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "low",
+      "confidence_note": "Landslide keyword in the article URL slug, but only country-level geocoding was possible. Treat location as approximate; article body not read."
+    },
+    {
+      "id": "hl-3131f8a30700",
+      "hazard_type": "landslide",
+      "title": "Avalanche pass trail reopens adirondacks after mudslide",
+      "country": "United States",
+      "country_code": "US",
+      "admin1": "New York",
+      "place_name": "Avalanche Pass, Town of Keene, Essex County",
+      "geo_level": "city",
+      "lat": 44.138,
+      "lon": -73.96,
+      "date": "2026-08-28",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.wcax.com/2026/08/27/avalanche-pass-trail-reopens-adirondacks-after-mudslide/",
+          "publisher": "wcax.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "medium",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-7cbdd5579902",
+      "hazard_type": "landslide",
+      "title": "Wise county sheriffs office reports highway 58 rockslide near norton va",
+      "country": "United States",
+      "country_code": "US",
+      "admin1": "Texas",
+      "place_name": "Wise County Sheriffs Department, 200, Rook Ramsey Drive",
+      "geo_level": "city",
+      "lat": 33.232,
+      "lon": -97.611,
+      "date": "2026-08-18",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.electric949.com/wise-county-sheriffs-office-reports-highway-58-rockslide-near-norton-va/",
+          "publisher": "electric949.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "medium",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-c0adfdb6de7d",
+      "hazard_type": "landslide",
+      "title": "U s highway 550 between silverton and ouray closed for mudslides",
+      "country": "United States",
+      "country_code": "US",
+      "admin1": "Colorado",
+      "place_name": "Silverton Railroad, Red Mountain Overlook Road, Ouray County",
+      "geo_level": "city",
+      "lat": 37.916,
+      "lon": -107.701,
+      "date": "2026-07-30",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.durangoherald.com/articles/news/u-s-highway-550-between-silverton-and-ouray-closed-for-mudslides/",
+          "publisher": "durangoherald.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "medium",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    },
+    {
+      "id": "hl-4b375251add4",
+      "hazard_type": "landslide",
+      "title": "Rockslide closes red mountain pass on friday night",
+      "country": "United States",
+      "country_code": "US",
+      "admin1": "Colorado",
+      "place_name": "Red Mountain, Costilla County, Colorado",
+      "geo_level": "city",
+      "lat": 37.112,
+      "lon": -105.181,
+      "date": "2026-07-25",
+      "severity_note": null,
+      "reported_killed": null,
+      "reported_injured": null,
+      "sources": [
+        {
+          "url": "https://www.durangoherald.com/articles/news/rockslide-closes-red-mountain-pass-on-friday-night/",
+          "publisher": "durangoherald.com"
+        }
+      ],
+      "extraction_method": "doc-api-slug-geocode-v1",
+      "match_tier": "slug",
+      "confidence": "high",
+      "confidence_note": "Landslide keyword in the article URL slug; place geocoded in the story's country. Article body not read; counts unverified."
+    }
+  ]
+}
