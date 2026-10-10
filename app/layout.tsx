@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { PosthogProvider } from "../components/PosthogProvider";
 
 const SITE_URL = "https://hazards.nshipyard.com";
 const OG_TITLE = "hazardlens: 26 landslide events extracted from global news";
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body><PosthogProvider>{children}</PosthogProvider></body>
     </html>
   );
 }
